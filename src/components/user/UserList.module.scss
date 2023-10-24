@@ -1,0 +1,129 @@
+$border-primary: #E4E4E7;
+$surface-primary: #FAFAFB;
+$text-primary: #24292F;
+$text-secondary: #667085;
+$text-third: #B2B7C2;
+
+.wrapper {
+  margin: auto;
+  overflow-x: auto;
+  padding: 20px;
+  width: 1112px;
+
+  table {
+    border: 1px solid $border-primary;
+    border-radius: 6px;
+    border-spacing: 0;
+    margin: auto;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+
+    thead {
+      background-color: $surface-primary;
+      color: $text-secondary;
+      font-size: 12px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 19px;
+
+      tr {
+        th {
+          border-bottom: 1px solid $border-primary;
+        }
+
+        th:first-child {
+          padding-left: 20px;
+        }
+
+        th:last-child {
+          padding-right: 20px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+
+        td {
+          border-bottom: 1px solid $border-primary;
+        }
+      }
+
+      .user {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        height: 60px;
+        justify-content: flex-start;
+        padding: 0 20px;
+    
+        img {
+          border-radius: 50%;
+          height: auto;
+          width: 24px;
+        }
+    
+        .infos {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+    
+          .name {
+            color: $text-primary;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 19.5px;
+            margin: 0;
+          }
+    
+          .mail {
+            color: $text-third;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            margin: 0;
+          }
+        }
+      }
+
+      .team {
+        border: 1px solid $border-primary;
+        border-radius: 17px;
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 17px;
+        padding: 3px 8px;
+        text-align: center;
+      }
+    
+      .access {
+        border-bottom: 1px dashed $border-primary;
+        color: $text-secondary;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+    
+      .lastLogin {
+        color: $text-third;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 17px;
+      }
+    
+      .more {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
