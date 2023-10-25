@@ -1,0 +1,66 @@
+@import 'src/styles/variables.scss';
+
+.wrapper {
+  position: relative;
+
+  .teamButton {
+    background-color: white;
+    border: 1px solid $border-primary;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 32px;
+    padding: 7px 12px;
+    width: 101px;
+  }
+
+  .comboBox {
+    background-color: white;
+    border: 1px solid $border-primary;
+    border-radius: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 38px;
+    width: 180px;
+
+    li {
+      align-items: center;
+      border-bottom: 1px solid $border-primary;
+      display: flex;
+      gap: 8px;
+      height: 29px;
+      padding: 6px 8px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      input,
+      label {
+        cursor: pointer;
+      }
+
+      input {
+        height: 12px;
+        width: 12px;
+      }
+
+      label {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+
+      .resetButton {
+        background-color: white;
+        border: 1px solid $border-primary;
+        border-radius: 6px;
+        cursor: pointer;
+        height: 26px;
+        padding: 4px 12px;
+        width: 100%;
+      }
+    }
+  }
+}
