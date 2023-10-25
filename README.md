@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Getting Started with My Filtered Table
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+You can see an online version, [here](https://my-filtered-table.vercel.app/).
+
+## How to launch the web app in local (on your computer)
+
+First, clone the repository:
+
+### `git clone git@github.com:giuliano2014/my-filtered-table.git`
+
+Second, go to the right folder:
+
+### `cd path/to-the-cloned-project`
+
+Third, install all dependencies:
+
+### `npm i`
+
+Fourth, start the application:
+
+### `npm start`
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Available Scripts
 
