@@ -1,10 +1,10 @@
 import styles from './UserList.module.scss';
 
-interface User {
+export interface User {
   access: string[];
   avatar: string;
   email: string;
-  groups: string[];
+  groups: string[] | string;
   id: string;
   last_login: number;
   name: string;
@@ -23,7 +23,6 @@ const formatDate = (timestamp: number): string => {
 }
 
 const UserList = ({ data }: UserListProps) => {
-  console.log(data);
   const handleMore = (): void => {
     console.log('handleMore');
   }

@@ -1,13 +1,8 @@
-$border-primary: #E4E4E7;
-$surface-primary: #FAFAFB;
-$text-primary: #24292F;
-$text-secondary: #667085;
-$text-third: #B2B7C2;
+@import 'src/styles/variables.scss';
 
 .wrapper {
-  margin: auto;
+  margin: 30px auto auto;
   overflow-x: auto;
-  padding: 20px;
   width: 1112px;
 
   table {
